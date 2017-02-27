@@ -8,19 +8,19 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/memes_text_id"
+        android:id="@+id/viral_text_id"
         android:text="dummy"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold"
         android:gravity="center_horizontal"
         android:paddingBottom="2dp"
-        android:textColor="#EF5350"
+        android:textColor="#E91E63"
         android:background="@drawable/list_selector"
         android:layout_marginBottom="1dp"/>
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:id="@+id/mems_image_id" />
+        android:id="@+id/viral_image_id" />
 
 </LinearLayout>

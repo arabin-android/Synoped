@@ -18,12 +18,14 @@ import java.util.ArrayList;
 public class Getinfo extends AsyncTask<Void, Void, ArrayList<ArrayList>>{
 
 
-    private ArrayList<Imgur> mems;
+    private ArrayList<Imgur> virals;
     private ArrayList<NewsItems>items;
+    private ArrayList<Memes>memes;
     private ProgressDialog progressDialog;
     public FetchDataInterface callBack = null;
     private static final String urlnews = "https://newsapi.org/v1/articles?source=the-next-web&sortBy=latest&apiKey=97ef12b9d8cd46b5b17902ca8b255d26";
-    private static final String urlMems = "https://api.imgur.com/3/g/memes/top/0.json";
+    private static final String urlVirals = "https://api.imgur.com/3/gallery/hot/top/2.json?showViral=bool";
+    private static final String urlMemes = "https://api.imgur.com/3/g/memes/viral/day/0.json";
     private String TAG = Getinfo.class.getName();
     private Context context;
     private ArrayList<ArrayList>totalitem;
@@ -32,15 +34,19 @@ public class Getinfo extends AsyncTask<Void, Void, ArrayList<ArrayList>>{
         this.context = ctx;
         totalitem = new ArrayList();
         items = new ArrayList();
-        mems = new ArrayList<>();
+        virals = new ArrayList<>();
+        memes = new ArrayList<>();
+
     }
 
     @Override
     protected void onPreExecute() {
+
         progressDialog = new ProgressDialog(context);
         progressDialog.setMessage("Please Wait...");
-        progressDialog.setCancelable(false);
+        progressDialog.setCancelable(true);
         progressDialog.show();
+
     }
 
     @Override
@@ -72,7 +78,7 @@ public class Getinfo extends AsyncTask<Void, Void, ArrayList<ArrayList>>{
                 Log.e(TAG, "JSON parsing error:" + e.getMessage());
             }
 
-            jsnStr = http.makeServiceCall1(urlMems);
+            jsnStr = http.makeServiceCall1(urlVirals);
                 if (jsnStr != null){
                     try {
                         //items.clear();
@@ -87,17 +93,39 @@ public class Getinfo extends AsyncTask<Void, Void, ArrayList<ArrayList>>{
 
                             if (item.getBoolean("is_album")){
                                 String link = item.getString("cover");
-                                mems.add(new Imgur(link));
+                                String desc = item.getString("title");
+                                virals.add(new Imgur(link,desc));
                             }
 
                         }
-                        totalitem.add(mems);
+                        totalitem.add(virals);
 
                     } catch (final JSONException e) {
                         Log.e(TAG, "Json parsing error: " + e.getMessage());
                     }
                 }
+            jsnStr = http.makeServiceCall1(urlMemes);
+            if (jsnStr!=null){
+                try {
+                    JSONObject jsonObject = new JSONObject(jsnStr);
+                    JSONArray jsonArray = jsonObject.getJSONArray("data");
+                    for (int i = 0; i<jsonArray.length(); i++){
+                        JSONObject item = jsonArray.getJSONObject(i);
+
+                        if (item.getBoolean("is_album")){
+                            String id = item.getString("cover");
+                            String title = item.getString("title");
+                            memes.add(new Memes(id,title));
+                        }
+
+                    }
+                    totalitem.add(memes);
+                }
+                catch (final  JSONException e){
+                    Log.e(TAG, "Json parsing error: " + e.getMessage());
+                }
             }
+        }
         return totalitem;
     }
     @Override
@@ -107,4 +135,5 @@ public class Getinfo extends AsyncTask<Void, Void, ArrayList<ArrayList>>{
         }
        callBack.fetch_data(newsItemses);
     }
+
 }

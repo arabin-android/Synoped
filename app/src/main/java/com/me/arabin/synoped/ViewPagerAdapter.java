@@ -26,7 +26,7 @@ public class ViewPagerAdapter extends PagerAdapter {
     private LayoutInflater inflater;
 
 
-    public ViewPagerAdapter(Activity act, ArrayList<NewsItems> news, int position){
+    public ViewPagerAdapter(Activity act, ArrayList<NewsItems> news){
 
         this.activity = act;
         this.news = news;

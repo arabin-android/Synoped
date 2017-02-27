@@ -31,9 +31,10 @@ public class ViewPagerActitiy extends Activity {
         //new ViewPagerAdapter(activity,news,position);
         myList = (ArrayList<NewsItems>) getIntent().getSerializableExtra("newsList");
         pager = (ViewPager)findViewById(R.id.details_view_viewPager);
-        adapter = new ViewPagerAdapter(ViewPagerActitiy.this,myList,position);
+        adapter = new ViewPagerAdapter(ViewPagerActitiy.this,myList);
         pager.setAdapter(adapter);
         pager.setCurrentItem(position);
 
     }
+
 }

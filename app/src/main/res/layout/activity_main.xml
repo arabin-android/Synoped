@@ -4,8 +4,7 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.me.arabin.synoped.MainActivity"
-    android:background="@drawable/main_background">
+    tools:context="com.me.arabin.synoped.MainActivity">
 
 
     <include layout="@layout/content_main"/>
