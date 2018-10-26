@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Volumes/E/work/Synoped/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="/Volumes/E/work/Synoped/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.1.1_3bab2809633cb70fb64a12b05916e321fef4f03c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/E/work/Synoped/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="/Volumes/E/work/Synoped/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.1.1_6539b90c88c17310970857527879b9749a43702f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arabin/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.1/support-annotations-25.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
+        <dex dex="/Volumes/E/work/Synoped/app/build/intermediates/pre-dexed/debug/support-annotations-25.1.1_aee68e794daf11d43dcea8c85cf86452c29fc9e2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/E/work/Synoped/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="/Volumes/E/work/Synoped/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.1.1_d59b677af2a4a1b34b9f506b950093debd97ca92.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/E/work/Synoped/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="/Volumes/E/work/Synoped/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.1.1_cf2991d9c12d7deceb83d47c504f052d2db1dfef.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/E/work/Synoped/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="/Volumes/E/work/Synoped/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.1.1_3a62449c6847b726b1d5fee411024330680bf450.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arabin/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Volumes/E/work/Synoped/app/build/intermediates/pre-dexed/debug/picasso-2.5.2_feca0b8fdb69eac951d0d68edd0d48310a8889a2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/E/work/Synoped/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="/Volumes/E/work/Synoped/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.1.1_6306b1eb0d33d3b9a5751c8d8e2c662591c0f7f4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/E/work/Synoped/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="/Volumes/E/work/Synoped/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.1.1_bab507a42533a67dedf5a0c8629ff309d45dedba.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arabin/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.5.2/ecf534dba3a8446ce84cbb797d314763be212a68/glide-3.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ecf534dba3a8446ce84cbb797d314763be212a68">
+        <dex dex="/Volumes/E/work/Synoped/app/build/intermediates/pre-dexed/debug/glide-3.5.2_712afc1ea95618ae8c573a59455751adf03982b3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/E/work/Synoped/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="/Volumes/E/work/Synoped/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.1.1_adefe0b40724ab57a30e0e955395c27f0bbc2ce6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/E/work/Synoped/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Volumes/E/work/Synoped/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.1.1_c6b30ef7b6b63bd2cf8b1fdf434eab22a01b724b.jar" />
+    </item>
+
+</items>
