@@ -24,8 +24,8 @@ public class Getinfo extends AsyncTask<Void, Void, ArrayList<ArrayList>>{
     private ProgressDialog progressDialog;
     public FetchDataInterface callBack = null;
     private static final String urlnews = "https://newsapi.org/v1/articles?source=the-next-web&sortBy=latest&apiKey=97ef12b9d8cd46b5b17902ca8b255d26";
-    private static final String urlVirals = "https://api.imgur.com/3/gallery/hot/top/2.json?showViral=bool";
-    private static final String urlMemes = "https://api.imgur.com/3/g/memes/viral/day/0.json";
+    private static final String urlVirals = "https://api.imgur.com/3/gallery/hot/top/1.json?showViral=bool";
+    private static final String urlMemes = "https://api.imgur.com/3/g/memes/viral/day/1.json?showMeme=bool";
     private String TAG = Getinfo.class.getName();
     private Context context;
     private ArrayList<ArrayList>totalitem;

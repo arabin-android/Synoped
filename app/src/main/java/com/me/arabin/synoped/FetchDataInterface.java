@@ -8,5 +8,5 @@ import java.util.ArrayList;
 
 public interface FetchDataInterface {
 
-    public void fetch_data(ArrayList<ArrayList> items);
+    void fetch_data(ArrayList<ArrayList> items);
 }
